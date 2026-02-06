@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Front page</title>
+    <title>Envycom</title>
+
+    <link rel="icon" type="image/x-icon" href="/img/envycom.png">
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet">
@@ -17,7 +19,7 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/icofont.css">
     <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/jQuery.verticalCarousel.css">
+    <link rel="stylesheet" href="css/jQuery.verticalCar ousel.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
 </head>
@@ -27,20 +29,30 @@
         <header class="header">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 col-sm-3 col-xs-12">
-                        <div class="logo">
-                            <a href="#"><img src="img/envy PNG.png" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-md-8 col-sm-9 col-xs-12">
-                        <div class="menu">
-                            <ul class="nav navbar-nav">
-                                <li class="active"><a href="#">Inicio</a></li>
-                                <li><a href="#services">Servicios</a></li>
-                                <li><a href="#partners">Marcas</a></li>
-                                <li><a href="#team">Contacto</a></li>
-                            </ul>
-                        </div>
+                    <div class="col-xs-12">
+                        <nav class="navbar navbar-default">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                    data-target="#menu-principal">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+
+                                <a class="navbar-brand" href="#">
+                                    <img src="img/envy PNG.png" alt="Logo" style="height: 100%; display: inline-block;">
+                                </a>
+                            </div>
+
+                            <div class="collapse navbar-collapse" id="menu-principal">
+                                <ul class="nav navbar-nav navbar-left">
+                                    <li class="active"><a href="#">Inicio</a></li>
+                                    <li><a href="#services">Servicios</a></li>
+                                    <li><a href="#partners">Marcas</a></li>
+                                    <li><a href="#team">Contacto</a></li>
+                                </ul>
+                            </div>
+                        </nav>
                     </div>
                 </div>
                 <div class="row">
@@ -79,7 +91,7 @@
                                         class="material-icons last">arrow_drop_down</i></h3>
                                 <div class="slide_up">
                                     <div class="accordion_img">
-                                        <img src="img/accordion_computo.jpg" alt="Equipos de cómputo">
+                                        <img src="img/Recursos/DellDesk.jpg" alt="Equipos de cómputo">
                                     </div>
                                     <p>Suministramos hardware de alto rendimiento para todas las necesidades de tu
                                         empresa. Desde estaciones de trabajo y laptops de última generación hasta
@@ -92,7 +104,7 @@
                                         class="material-icons last">arrow_drop_down</i></h3>
                                 <div class="slide_up">
                                     <div class="accordion_img">
-                                        <img src="img/accordion_impresion.jpg" alt="Equipos de impresión">
+                                        <img src="img/Recursos/impresora.jpg" alt="Equipos de impresión">
                                     </div>
                                     <p>Soluciones integrales de impresión láser, inyección de tinta y sistemas de gran
                                         formato. Ofrecemos equipos eficientes que reducen costos operativos por página.
@@ -105,7 +117,7 @@
                                         class="material-icons last">arrow_drop_down</i></h3>
                                 <div class="slide_up">
                                     <div class="accordion_img">
-                                        <img src="img/accordion_software.jpg" alt="Software empresarial">
+                                        <img src="img/Recursos/Microsoft_365.jpg" alt="Software empresarial">
                                     </div>
                                     <p>Venta y gestión de licencias originales para Microsoft 365, sistemas operativos,
                                         antivirus (Kaspersky) y herramientas de productividad.</p>
@@ -117,7 +129,7 @@
                                         class="material-icons last">arrow_drop_down</i></h3>
                                 <div class="slide_up">
                                     <div class="accordion_img">
-                                        <img src="img/accordion_redes.jpg" alt="Infraestructura de redes">
+                                        <img src="img/Recursos/Red.jpg" alt="Infraestructura de redes">
                                     </div>
                                     <p>Diseño e implementación de infraestructura de red local (LAN) y Wi-Fi
                                         empresarial. Instalamos cableado estructurado bajo normas internacionales.</p>
@@ -129,7 +141,7 @@
                                         class="material-icons last">arrow_drop_down</i></h3>
                                 <div class="slide_up">
                                     <div class="accordion_img">
-                                        <img src="img/accordion_mantenimiento.jpg" alt="Soporte técnico">
+                                        <img src="img/Recursos/mantenimiento.jpg" alt="Soporte técnico">
                                     </div>
                                     <p>Extendemos la vida útil de tu inversión mediante pólizas de mantenimiento
                                         programado. Limpieza física, optimización de sistema y actualización de
@@ -146,9 +158,9 @@
         </section>
 
 
-        <section class="partners" id="marcas">
-            <div class="container">
-                <div class="text" id="partners">
+        <section class="partners">
+            <div class="container" id="partners">
+                <div class="text">
                     <h2>Nuestras Marcas</h2>
                     <p>Contamos con el respaldo de los fabricantes líderes en la industria tecnológica para garantizar
                         soluciones de alta calidad.</p>
@@ -157,42 +169,42 @@
                 <div class="row brand_grid">
                     <div class="col-md-3 col-sm-4 col-xs-6">
                         <div class="single_brand">
-                            <img src="img/brands/dell.png" alt="Dell Technologies">
+                            <img src="img/Logos/Dell_Logo.svg.png" alt="Dell Technologies">
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-4 col-xs-6">
                         <div class="single_brand">
-                            <img src="img/brands/hp.png" alt="HP Enterprise">
+                            <img src="img/Logos/HP_logo_2025.svg" alt="HP Enterprise">
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-4 col-xs-6">
                         <div class="single_brand">
-                            <img src="img/brands/microsoft.png" alt="Microsoft">
+                            <img src="img/Logos/Microsoft-Logo.png" alt="Microsoft">
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-4 col-xs-6">
                         <div class="single_brand">
-                            <img src="img/brands/kaspersky.png" alt="Kaspersky Lab">
+                            <img src="img/Logos/kaspersky-logo.jpg" alt="Kaspersky Lab">
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-4 col-xs-6">
                         <div class="single_brand">
-                            <img src="img/brands/lenovo.png" alt="Lenovo">
+                            <img src="img/Logos/BenQ-logo.png" alt="BenQ">
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-4 col-xs-6">
                         <div class="single_brand">
-                            <img src="img/brands/cisco.png" alt="Cisco Systems">
+                            <img src="img/Logos/Cisco-logo.png" alt="Cisco Systems">
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-4 col-xs-6">
                         <div class="single_brand">
-                            <img src="img/brands/brother.png" alt="Brother">
+                            <img src="img/Logos/Asus-Logo.png" alt="Asus">
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-4 col-xs-6">
                         <div class="single_brand">
-                            <img src="img/brands/epson.png" alt="Epson">
+                            <img src="img/Logos/Apple_logo_black.svg" alt="Apple">
                         </div>
                     </div>
                 </div>
@@ -220,38 +232,25 @@
                                 <div class="item active">
                                     <img src="img/Colaboradores/2_PH Outlook banner Alonso.jpg" alt="Alonso"
                                         style="width: 593px; height: 295px; margin: 0 auto; object-fit: contain;">
-                                    <div class="carousel-caption-contact">
-                                        <a href="mailto:alonsobautista@envycom.mx?subject=Consulta para Alonso"
-                                            class="button">Contactar por correo a Alonso</a>
-                                    </div>
                                 </div>
 
                                 <div class="item">
                                     <img src="img/Colaboradores/3_PH Outlook banner Jesús.jpg" alt="Jesús"
                                         style="width: 593px; height: 295px; margin: 0 auto; object-fit: contain;">
-                                    <div class="carousel-caption-contact">
-                                        <a href="mailto:jesusaltamirano@envycom.mx?subject=Consulta para Jesús"
-                                            class="button">Contactar por correo a Jesús</a>
-                                    </div>
                                 </div>
 
                                 <div class="item">
                                     <img src="img/Colaboradores/4_PH Outlook banner Michelle.jpg" alt="Michelle"
                                         style="width: 593px; height: 295px; margin: 0 auto; object-fit: contain;">
-                                    <div class="carousel-caption-contact">
-                                        <a href="mailto:michellenarciso@envycom.mx?subject=Consulta para Michelle"
-                                            class="button">Contactar por correo a Michelle</a>
-                                    </div>
                                 </div>
 
                                 <div class="item">
                                     <img src="img/Colaboradores/1_PH Outlook banner Daniela.jpg" alt="Daniela"
                                         style="width: 593px; height: 295px; margin: 0 auto; object-fit: contain;">
-                                    <div class="carousel-caption-contact">
-                                        <a href="mailto:danielareyes@envycom.mx?subject=Consulta para Daniela"
-                                            class="button">Contactar por correo a Daniela</a>
-                                    </div>
                                 </div>
+                            </div>
+                            <div class="carousel-caption-contact">
+                                <a href="mailto:contacto@envycom.mx?subject=" class="button">Contactanos via correo</a>
                             </div>
 
                             <a class="left carousel-control" href="#colaboradoresCarousel" data-slide="prev">
@@ -307,13 +306,14 @@
             </div>
         </footer>
     </div>
-    <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.flexslider.js"></script>
     <script src="js/jQuery.verticalCarousel.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="js/active.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <a href="https://wa.me/522382742748?text=Hola,%20vengo%20de%20tu%20sitio%20web" class="whatsapp-float"
         target="_blank">
