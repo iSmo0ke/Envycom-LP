@@ -897,3 +897,39 @@ header.header .menu ul {
     border: none !important;
     box-shadow: none !important;
 }
+
+.navbar-nav > li.dropdown {
+  position: relative;
+}
+
+.navbar-nav > li.dropdown .dropdown-menu {
+  display: none;       
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  padding: 8px 0;
+  margin: 6px 0 0;
+  list-style: none;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.12);
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.15);
+  z-index: 9999;
+}
+
+.navbar-nav > li.dropdown .dropdown-menu > li > a {
+  display: block;
+  padding: 10px 14px;
+  text-decoration: none;
+  color: #333;
+  white-space: nowrap;
+}
+
+.navbar-nav > li.dropdown .dropdown-menu > li > a:hover {
+  background: rgba(0,0,0,.06);
+}
+
+.navbar-nav > li.dropdown:hover .dropdown-menu {
+  display: block;
+}
